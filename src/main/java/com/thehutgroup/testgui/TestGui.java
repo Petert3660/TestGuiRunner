@@ -13,11 +13,11 @@ import java.awt.event.ActionListener;
 
 public class TestGui extends JFrame {
 
-    private static final String MAIN_HEADING = "NewGuiCreator";
-    private static final String SUB_HEADING = "About";
+    private static final String MAIN_HEADING = "New GUI Script Creator";
+    private static final String SUB_HEADING = "Create New Project";
     private static final String TITLE = MAIN_HEADING + " - " + SUB_HEADING;
-    private static final int FRAME_X_SIZE = 400;
-    private static final int FRAME_Y_SIZE = 300;
+    private static final int FRAME_X_SIZE = 550;
+    private static final int FRAME_Y_SIZE = 250;
     private Color col = new Color(230, 255, 255);
 
     private TestGui tg = this;
@@ -32,12 +32,12 @@ public class TestGui extends JFrame {
 
         FreeLabel l0 = new FreeLabel(MAIN_HEADING, 30, 30, 500, 20, new Font("", Font.BOLD + Font.ITALIC, 20));
 
-        FreeButton b0 = new FreeButton("OK", 160, 200, 80);
+        FreeButton b0 = new FreeButton("OK", 180, 150, 80);
+
+        FreeButton b1 = new FreeButton("Cancel", 290, 150, 80);
 
 
-        FreeLabel comp0 = new FreeLabel("NewGuiCreator", 30, 90, 200, 20);
-
-        FreeLabel comp1 = new FreeLabel("Version 1.0", 30, 140, 200, 20);
+        FreeLabelTextFieldPair comp0 = new FreeLabelTextFieldPair(col, "Please enter the new project name:", 30, 90, 240);
 
         // This is the control for the OK button
         b0.addActionListener(new ActionListener() {
@@ -46,9 +46,16 @@ public class TestGui extends JFrame {
             }
         });
 
+        // This is the control for the Cancel-implement button
+        b1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                tg.dispose();
+            }
+        });
+
         p1.add(b0);
-        p1.add(comp0);
-        p1.add(comp1);
+        p1.add(b1);
+        p1.add(comp0.getPanel());
         p1.add(l0);
         this.add(p1);
 
