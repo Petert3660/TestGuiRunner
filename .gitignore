@@ -1,0 +1,14 @@
+# IntelliJ Files
+.idea/
+
+# Gradle Files
+.gradle/
+
+# Build Files
+build/
+
+#Testing Area
+src/main/java/com/thehutgroup/testingarea/
+
+*.tmp
+
