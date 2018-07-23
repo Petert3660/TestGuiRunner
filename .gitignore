@@ -8,6 +8,6 @@
 build/
 
 #Testing Area
-src/main/java/com/thehutgroup/testgui/TestGui.java
+src/main/java/com.thehutgroup/testgui/TestGui.java
 
 
