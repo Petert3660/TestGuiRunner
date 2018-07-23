@@ -1,6 +1,6 @@
 package com.thehutgroup.guicomponents;
 
-import javax.swing.JTextField;
+import javax.swing.*;
 
 /**
  * Created by thomsonp on 05/01/2017.

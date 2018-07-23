@@ -1,7 +1,7 @@
 package com.thehutgroup.guicomponents;
 
-import java.awt.Color;
-import javax.swing.JCheckBox;
+import javax.swing.*;
+import java.awt.*;
 
 /**
  * Created by thomsonp on 18/01/2017.

@@ -1,7 +1,7 @@
 package com.thehutgroup.guicomponents;
 
+import javax.swing.*;
 import java.util.ArrayList;
-import javax.swing.ButtonGroup;
 
 public class FreeRadioButtonGroup extends ButtonGroup {
 

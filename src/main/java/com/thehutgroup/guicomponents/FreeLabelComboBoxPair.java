@@ -1,8 +1,8 @@
 package com.thehutgroup.guicomponents;
 
-import java.awt.Color;
+import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
-import javax.swing.JPanel;
 
 public class FreeLabelComboBoxPair {
 

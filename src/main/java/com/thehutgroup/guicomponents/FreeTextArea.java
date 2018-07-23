@@ -1,11 +1,7 @@
 package com.thehutgroup.guicomponents;
 
-import java.awt.Color;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JScrollBar;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
+import javax.swing.*;
+import java.awt.*;
 
 /**
  * Created by thomsonp on 12/01/2017.

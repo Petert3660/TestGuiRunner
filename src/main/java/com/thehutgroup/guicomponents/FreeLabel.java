@@ -1,7 +1,7 @@
 package com.thehutgroup.guicomponents;
 
-import java.awt.Font;
-import javax.swing.JLabel;
+import javax.swing.*;
+import java.awt.*;
 
 /**
  * Created by thomsonp on 05/01/2017.
