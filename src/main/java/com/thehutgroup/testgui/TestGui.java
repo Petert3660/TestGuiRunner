@@ -20,7 +20,7 @@ public class TestGui extends JFrame {
     private static final String MAIN_HEADING = "GIT Branch Creator";
     private static final String TITLE = MAIN_HEADING;
     private static final int FRAME_X_SIZE = 800;
-    private static final int FRAME_Y_SIZE = 200;
+    private static final int FRAME_Y_SIZE = 600;
     private Color col = new Color(230, 255, 255);
 
     private TestGui tg = this;
@@ -37,7 +37,7 @@ public class TestGui extends JFrame {
 
         FreeLabel l0 = new FreeLabel(MAIN_HEADING, 30, 30, 500, 20, new Font("", Font.BOLD + Font.ITALIC, 20));
 
-        FreeButton b0 = new FreeButton("Exit", 360, 100, 80);
+        FreeButton b0 = new FreeButton("Exit", 360, 500, 80);
 
 
         // This is the control for the Exit-implement button
@@ -88,6 +88,37 @@ public class TestGui extends JFrame {
         });
 
         menuBar.add(menu0);
+
+        JMenu menu1 = new JMenu("Edit");
+        JMenuItem menuItem10 = new JMenuItem("Read");
+        menu1.add(menuItem10);
+        JMenuItem menuItem11 = new JMenuItem("Write");
+        menu1.add(menuItem11);
+        JMenuItem menuItem12 = new JMenuItem("Close");
+        menu1.add(menuItem12);
+
+        // This is the control for the Edit\Read menu item
+        menuItem10.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("Menu item - Read in the Edit menu has been clicked");
+            }
+        });
+
+        // This is the control for the Edit\Write menu item
+        menuItem11.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("Menu item - Write in the Edit menu has been clicked");
+            }
+        });
+
+        // This is the control for the Edit\Close menu item
+        menuItem12.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("Menu item - Close in the Edit menu has been clicked");
+            }
+        });
+
+        menuBar.add(menu1);
 
     }
 
