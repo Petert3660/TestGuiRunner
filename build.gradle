@@ -1,7 +1,7 @@
-group 'ptconsultancy'
-version '1.0'
-
 apply plugin: 'java'
+
+def projectName = "TestGuiRunner"
+def version = "1.0"
 
 sourceCompatibility = 1.8
 
@@ -14,6 +14,8 @@ dependencies {
 }
 
 jar {
+    baseName = "${projectName}"
+    version = "${version}"
     manifest {
         attributes 'Main-Class': 'com.thehutgroup.Application'
     }
