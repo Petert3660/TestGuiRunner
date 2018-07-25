@@ -1,7 +1,7 @@
 package com.thehutgroup;
 
 import com.thehutgroup.guis.GuiHelper;
-import com.thehutgroup.testgui.TestGui;
+import com.thehutgroup.testgui.*;
 
 public class Application {
 
