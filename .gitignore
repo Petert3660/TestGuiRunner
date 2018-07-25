@@ -7,7 +7,5 @@
 # Build Files
 build/
 
-#Testing Area
-src/main/java/com/thehutgroup/testgui/*.java
-
-
+# TestGui.java auto-generated file
+src/main/java/com/thehutgroup/testgui/TestGui.java
