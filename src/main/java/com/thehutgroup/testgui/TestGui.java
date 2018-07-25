@@ -14,8 +14,8 @@ import java.awt.event.ActionListener;
 
 public class TestGui extends JFrame {
 
-    private static final String MAIN_HEADING = "BAU Dashboard";
-    private static final String SUB_HEADING = "GIT New Branch";
+    private static final String MAIN_HEADING = "Example Dashboard";
+    private static final String SUB_HEADING = "Main Dashboard";
     private static final String TITLE = MAIN_HEADING + " - " + SUB_HEADING;
     private static final int FRAME_X_SIZE = 1000;
     private static final int FRAME_Y_SIZE = 900;
