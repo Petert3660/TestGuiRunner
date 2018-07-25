@@ -3,6 +3,12 @@ apply plugin: 'java'
 def projectName = "TestGuiRunner"
 def version = "1.0"
 
+def jenkins = "C:/Program Files (x86)/Jenkins/workspace"
+def testEnvironment = "C:/PTConsultancy/LocalTestEnvironment"
+def testDir = "${testEnvironment}/${projectName}"
+def buildDir = "${jenkins}/${projectName}"
+def localBuildDir = "C:/GradleTutorials/${projectName}"
+
 sourceCompatibility = 1.8
 
 repositories {
@@ -17,6 +23,29 @@ jar {
     baseName = "${projectName}"
     version = "${version}"
     manifest {
-        attributes 'Main-Class': 'com.thehutgroup.Application'
+        attributes 'Main-Class': 'com.thehutgroup.Application',
+                 'Implementation-Title': projectName,
+                 'Implementation-Version': version
+    }
+}
+
+task setBuildPaths {
+    println "Setting up test environment"
+
+    println "Jenkins directory - ${jenkins}"
+    println "Build directory - ${buildDir}"
+
+    delete fileTree("${testDir}")
+    file("${testDir}").mkdirs()
+}
+
+task copyFiles(dependsOn: test) {
+    doLast {
+        println "Copying files to testEnvironment now"
+        copy {
+            from file("${buildDir}/build/libs")
+            include "*.jar"
+            into file("${testEnvironment}/${projectName}")
+        }
     }
 }
