@@ -50,6 +50,9 @@ public class TestGui extends JFrame {
         FreeLabelTextFieldPair comp0 = new FreeLabelTextFieldPair(col, "Please enter the new branch name:", 30, 90, 240);
 
         ArrayList<String> items0 = new ArrayList<String>();
+        items0.add("--Select");
+        items0.add("wp-rest-api");
+        items0.add("warehouse-platform-app");
         FreeLabelComboBoxPair comp1 = new FreeLabelComboBoxPair(col, "Please select the project name:", 30, 140, 240, items0);
 
         FreeLabel comp2 = new FreeLabel("This is an example of a free label", 30, 190, 400, 20);
@@ -59,6 +62,9 @@ public class TestGui extends JFrame {
         FreeTextField comp4 = new FreeTextField("This is an example of a free textField", 30, 290, 500, 20);
 
         ArrayList<String> items1 = new ArrayList<String>();
+        items1.add("--Select");
+        items1.add("wp-rest-api");
+        items1.add("warehouse-platform-app");
         FreeComboBox comp5 = new FreeComboBox(30, 340, 200, 20, items1);
 
         FreeRadioButtonGroup comp6 = new FreeRadioButtonGroup();
